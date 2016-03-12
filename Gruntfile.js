@@ -30,7 +30,7 @@ module.exports = function( grunt ) {
             "options": {
                 "configFile": ".eslintrc.json"
             },
-            "scripts": [ "**/*.js" ]
+            "scripts": [ "exo-**/*.js", "_shared/*.js" ]
         },
         // watch
         "watch": {
@@ -38,7 +38,7 @@ module.exports = function( grunt ) {
                 "spawn": false
             },
             "scripts": {
-                "files": [ "**/*.js" ],
+                "files": [ "exo-**/*.js", "_shared/*.js" ],
                 "tasks": [ "eslint" ]
             }
         }
