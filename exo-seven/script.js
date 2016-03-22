@@ -65,9 +65,9 @@
         var i = 0;
 
         do {
-            oImageData.data[ i ] = 256 - oImageData.data[ i ]; // red
-            oImageData.data[ i + 1 ] = 256 - oImageData.data[ i + 1 ]; // green
-            oImageData.data[ i + 2 ] = 256 - oImageData.data[ i + 2 ]; // blue
+            oImageData.data[ i ] = 255 - oImageData.data[ i ]; // red
+            oImageData.data[ i + 1 ] = 255 - oImageData.data[ i + 1 ]; // green
+            oImageData.data[ i + 2 ] = 255 - oImageData.data[ i + 2 ]; // blue
         } while ( ( oImageData.data[ i += 4 ] ) != null );
 
         return oImageData;
