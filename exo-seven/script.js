@@ -79,7 +79,7 @@
 
         do {
             // cf. https://fr.wikipedia.org/wiki/Luminance#Matri.C3.A7age
-            iLuminance = oImageData.data[ i ] * 0.299 + oImageData.data[ i + 1 ] * 0.587 + oImageData.data[ i ] * 0.114;
+            iLuminance = oImageData.data[ i ] * 0.299 + oImageData.data[ i + 1 ] * 0.587 + oImageData.data[ i + 2 ] * 0.114;
             oImageData.data[ i ] = iLuminance; // red
             oImageData.data[ i + 1 ] = iLuminance; // green
             oImageData.data[ i + 2 ] = iLuminance; // blue
