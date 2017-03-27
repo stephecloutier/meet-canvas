@@ -45,11 +45,29 @@ class ExoFourCanvApp extends CanvApp {
         context.stroke();
     }
     drawPalmtree() {
+        let {context} = this;
 
+        context.strokeStyle = "limegreen";
+
+        context.beginPath();
+        context.moveTo(20, 120);
+        context.arcTo(20, 0, 100, 100, 20);
+
+        context.stroke();
     }
 
     drawWaves() {
+        let {context} = this;
 
+        context.strokeStyle = "turquoise";
+
+        context.beginPath();
+        context.moveTo(20, 150);
+        context.bezierCurveTo(80, 130, 80, 180, 140, 150);
+        context.moveTo(20, 170);
+        context.bezierCurveTo(80, 150, 80, 200, 140, 170);
+
+        context.stroke();
     }
 
     draw() {
